@@ -1,18 +1,11 @@
 $(document).ready(function () {
-    $(".pri-item").slick({
+    $(".item-slider1").slick({
     });
-});
-
-$(document).ready(function () {
-    $(".ori-item").slick({
-        
+    $(".item-slider2").slick({
     });
-});
-
-$(document).ready(function () {
-    $(".hd-slide-info").slick({
+    /*$(".hd-slide-info").slick({
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: true,
-    });
+    });*/
 });
