@@ -9,17 +9,10 @@ a{
 }
 .header{
     width: 100%;
-    height: 100%;
-}
-.nav {
-    position: fixed;
-    z-index: 9999;
+    height: 14px;
+    position: relative;
 }
 
-/*
-.drawer_hidden {
-    display: none;
-}
 
 .drawer_open {
     display: flex;
@@ -27,63 +20,249 @@ a{
     width: 60px;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 0.8rem;
-    left: 20%;
+    position: fixed;
+    top: 2%;
+    left: 2%;
     z-index: 100;
     cursor: pointer;
 }
 
-.drawer_open span,
-.drawer_open span::before,
-.drawer_open span::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 25px;
-    border-radius: 3px;
-    background-color: #333;
-    transition: 0.5s;
+.drawer_open span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
     position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background: #282b2b;
+    width: 45%;
+  }
+
+.drawer_open span:nth-of-type(1) {
+  top:15px; 
 }
 
-.drawer_open span::before {
-    bottom: 8px;
+.drawer_open span:nth-of-type(2) {
+  top:23px;
 }
 
-.drawer_open span::after {
-    top: 8px;
+.drawer_open span:nth-of-type(3) {
+  top:31px;
 }
 
-#drawer_input:checked~.drawer_open span {
-    background: rgba(255, 255, 255, 0)
+/*activeクラスが付与されると線が回転して×に*/
+
+.drawer_open.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+    background-color: #f2ede0;
 }
 
-#drawer_input:checked~.drawer_open span::before {
-    bottom: 0;
-    transform: rotate(45deg);
+.drawer_open.active span:nth-of-type(2) {
+  opacity: 0;/*真ん中の線は透過*/
 }
 
-#drawer_input:checked~.drawer_open span::after {
-    top: 0;
-    transform: rotate(-45deg);
+.drawer_open.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+    background-color: #f2ede0;
 }
 
-.nav_content {
+
+.nav-off{
+    display: none;
+}
+.nav_content{
     width: 100%;
-    height: 100%;
-    position: fixed;
+    height: 100vh;
+    position: absolute;
     top: 0;
-    left: 100%;
-    z-index: 99;
-    transition: .5s;
+    left: 0;
+    z-index: 10;
 }
 .nav-bg{
-    background: #000;
+    width: 100%;
+    height: 100%;
+    background: #0A0D0D;
+}
+.nav-bg2{
+    width: 100%;
+    height: 100%;
+    background: url(/image/header/nav-mashroom.png) no-repeat center;
+    background-size: contain;
+    opacity: .5;
+}
+.nav-whole{
     width: 100%;
     height: 100%;
 }
-*/
+.nav-list{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1fr 1fr 1fr 1fr;
+    padding: 2em 1em;
+}
+.nav-item{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+}
+.nav-text1{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #ddd;
+    display: flex;
+    flex-flow: column;
+}
+.nav-p1{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-p2{
+    width: 100%;
+    font-size: .8rem;
+    font-weight: lighter;
+}
+.nav-text2{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav-text3{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav-text4{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav-text5{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav-text6{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav-text7{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav-text8{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.nav-text9{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.nav-text10{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.nav-text11{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.nav-text12{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.nav-text13{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.nav-text14{
+    width: 100%;
+    height: 100%;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
 
 .top-text{
     width: 100%;
@@ -129,7 +308,7 @@ a{
     width: 100%;
     height: 20%;
     font-size: 1rem;
-    color: #fff;
+    color: #f7f4ea;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,15 +317,92 @@ a{
     width: 100%;
     height: 15%;
     font-size: 1.2rem;
-    color: #fff;
+    color: #f7f4ea;
     text-align: center;
 }
 .ch-but{
-    width: 50%;
-    height: 10%;
+    width: 45%;
+    height: 8%;
     margin: 0 auto;
-    background-color: #ff9934;
+    background-color: #F9AF3C;
     border-radius: 10px;
+}
+.hd-info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hd-whole{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.headline2{
+    width: 100%;
+    height: 20%;
+    font-size: 2rem;
+    color: #f7f4ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.hd-text2{
+    width: 100%;
+    height: 15%;
+    font-size: .6rem;
+    text-align: center;
+    color: #f7f4ea;
+    font-weight: lighter;
+}
+.hd-but2{
+    width: 45%;
+    height: 8%;
+    margin: 0 auto;
+    background-color: #F9AF3C;
+    border-radius: 10px;
+}
+.headkine2{
+    width: 100%;
+    height: 20%;
+    font-size: 1.5rem;
+    color: #f7f4ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.hd-but{
+    width: 45%;
+    height: 8%;
+    background-color: #F9AF3C;
+    border-radius: 10px;
+}
+.headline3{
+    width: 100%;
+    height: 30%;
+    font-size: 1.2rem;
+    color: #f7f4ea;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hd-text3{
+    width: 100%;
+    height: 20%;
+    font-size: .8rem;
+    text-align: center;
+    color: #f7f4ea;
+    font-weight: lighter;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 main{
     width: 100%;
@@ -1068,7 +1324,98 @@ footer{
     font-size: 2rem;
 }
 .fot-text{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 0;
+}
+.fot-mail{
     width: 80%;
+    height: 5rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.mail-info{
+    width: 100%;
+    height: 100%;
+}
+.mail-whole{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;   
+}
+.mail-whole :hover{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.mail-img-info{
+    width: 100%;
     height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+}
+.mail-img-info :hover{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #000;
+    background: url(/image/section6/mail-button.png) no-repeat center;
+    background-size: cover;
+}
+.mail-img-info img{
+    display: none;
+}
+.fot-tel{
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+.fot-tel :hover{
+    width: 100%;
+    height: 3rem;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.tel-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+}
+.tel-info :hover{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #000;
+    background: url(/image/section6/mail-button.png) no-repeat center;
+    background-size: cover;
+}
+.add-whole{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5rem;
+}
+.add-info{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: bold;
 }
