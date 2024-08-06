@@ -1,7 +1,13 @@
 $(document).ready(function () {
     $(".item-slider1").slick({
+      autoplay: true,
+      autoplaySpeed: 4000,
+      arrows: false,
     });
     $(".item-slider2").slick({
+      autoplay: true,
+      autoplaySpeed: 4000,
+      arrows: false,
     });
     $(".hd-slide-info").slick({
         autoplay: true,
