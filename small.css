@@ -1,7 +1,8 @@
 body {
-    width: 100%;
+    width: 425px;
     height: 100%;
     background-color: #f7f4ea;
+    overflow-x: hidden;
 }
 
 a {
@@ -121,13 +122,13 @@ a {
 .nav-item {
     width: 100%;
     height: 100%;
-    color: #ddd;
+    color: #b2b2b2;
 }
 
 .nav-text1 {
     width: 100%;
     height: 100%;
-    color: #ddd;
+    color: #b2b2b2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +137,7 @@ a {
 
 .nav-item a {
     text-decoration: none;
-    color: #ddd;
+    color: #b2b2b2;
     display: flex;
     flex-flow: column;
 }
@@ -385,7 +386,8 @@ a {
     width: 100%;
     height: 20%;
     font-size: 2rem;
-    color: #f7f4ea;
+    color: #fff;
+    text-shadow: .5px .5px #b2b2b2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,7 +399,8 @@ a {
     height: 15%;
     font-size: .6rem;
     text-align: center;
-    color: #f7f4ea;
+    color: #fff;
+    text-shadow: .5px .5px #b2b2b2;
     font-weight: lighter;
 }
 
@@ -413,7 +416,8 @@ a {
     width: 100%;
     height: 20%;
     font-size: 1.5rem;
-    color: #f7f4ea;
+    color: #fff;
+    text-shadow: .5px .5px #a2a2a2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -431,7 +435,8 @@ a {
     width: 100%;
     height: 30%;
     font-size: 1.2rem;
-    color: #f7f4ea;
+    color: #ffffff;
+    text-shadow: .5px .5px #a2a2a2;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -443,10 +448,11 @@ a {
     height: 20%;
     font-size: .8rem;
     text-align: center;
-    color: #f7f4ea;
+    color: #fff;
+    text-shadow: .5px .5px #b2b2b2;
     font-weight: lighter;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 
