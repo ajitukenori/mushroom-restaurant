@@ -1,1 +1,1 @@
-# sample
+# responsive design
